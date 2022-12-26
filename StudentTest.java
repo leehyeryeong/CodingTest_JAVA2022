@@ -15,13 +15,14 @@ class Student implements Comparable {
     public double getGpa() { return gpa; }
     public int compareTo(Object obj) {
         Student other = (Student)obj;
-        if(gpa < other.gpa) {
-            return -1;
-        } else if(gpa > other.gpa) {
-            return 1;
-        } else {
-            return 0;
-        }
+//        if(gpa < other.gpa) {
+//            return -1;
+//        } else if(gpa > other.gpa) {
+//            return 1;
+//        } else {
+//            return 0;
+//        }
+        return (other.name.compareTo(this.name));
     }
 }
 public class StudentTest {
@@ -31,8 +32,13 @@ public class StudentTest {
         students[1] = new Student("이길동", 2.8);
         students[2] = new Student("김길동", 3.75);
 
+//        Arrays.sort(students);
+//        System.out.println("GPA 오름차순 출력");
+//        for (Student s: students) {
+//            System.out.println("이름 = "+s.getName()+", 평점 = "+s.getGpa());
+//        }
         Arrays.sort(students);
-        System.out.println("GPA 오름차순 출력");
+        System.out.println("이름 오름차순 출력");
         for (Student s: students) {
             System.out.println("이름 = "+s.getName()+", 평점 = "+s.getGpa());
         }
