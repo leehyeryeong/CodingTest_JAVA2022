@@ -1,0 +1,20 @@
+//문자열 비교일 때
+public int compareTo(Member m1) {
+	return (this.name.compareTo(m1.name));
+} //m1의 name이 크면 양수, 같으면 0, 작으면 음수를 리턴
+
+//Student의 이름을 비교할 경우
+public int compareTo(Object obj) {
+	Student other = (Student)obj;
+	return (this.name.compareTo(other.name));
+} //obj의 name이 크면 양수, 같으면 0, 작으면 음수를 리턴
+
+//숫자 비교 - 오름차순
+public int compareTo(Member m1) {
+	return (this.id-m1.id);
+}
+
+//숫자 비교 - 내림차순
+public int compareTo(Member m1) {
+	return (m1.id-this.id);
+}
