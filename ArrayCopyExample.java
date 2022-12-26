@@ -7,8 +7,11 @@ public class ArrayCopyExample {
 
         System.arraycopy(oldStrArray, 0, newStrArray, 0, oldStrArray.length);
 
-        for (int i = 0; i < newStrArray.length; i++) {
-            System.out.print(newStrArray[i]+", ");
+//        for (int i = 0; i < newStrArray.length; i++) {
+//            System.out.print(newStrArray[i]+", ");
+//        }
+        for(String str: newStrArray) {
+            System.out.print(str+", ");
         }
     }
 }
