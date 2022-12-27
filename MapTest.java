@@ -8,7 +8,7 @@ public class MapTest {
         people.put("홍길동", 95);
         people.put("최길동", 88);
 
-        System.out.println("총 Enity: "+people.size());
+        System.out.println("총 Entry: "+people.size());
 
         Set<Map.Entry<String, Integer>> set = people.entrySet();
         Iterator<Map.Entry<String, Integer>> it = set.iterator();

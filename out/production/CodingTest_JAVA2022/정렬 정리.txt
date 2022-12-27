@@ -1,5 +1,3 @@
-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
-
 //문자열 비교일 때
 public int compareTo(Member m1) {
 	return (this.name.compareTo(m1.name));
